@@ -25,7 +25,7 @@ function App() {
     fetchData()
   }, [])
 
-  // console.log(tours)
+  console.log(tours)
 
   return (
     <>
