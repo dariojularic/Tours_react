@@ -11,7 +11,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
-        console.log(response)
+        // console.log(response)
         const json = await response.json();
         // console.log(json)
         setTours(json);
@@ -33,7 +33,7 @@ function App() {
         <h1>Our Tours</h1>
         <ul className="tours-list">
           {tours.map(tour => {
-            console.log(tour)
+            // console.log(tour)
             return <Tour key={tour.id} {...tour}/>
           })}
         </ul>

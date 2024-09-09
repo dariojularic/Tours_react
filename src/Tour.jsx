@@ -10,7 +10,6 @@ function Tour(props) {
       </div>
       <h3>{name}</h3>
       <p>{info}</p>
-
     </li>
   )
 
