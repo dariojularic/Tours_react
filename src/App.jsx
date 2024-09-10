@@ -6,26 +6,45 @@ function App() {
   const [tours, setTours] = useState(null);
   const [error, setError] = useState(null);
   const url = "https://www.course-api.com/react-tours-project";
+  // const url = "https://restcountries.com/v3.1/all";
+
+
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch(url);
+  //     // console.log(response)
+  //     const data = await response.json();
+  //     // console.log(data)
+  //     setTours(data);
+  //     console.log(tours)
+  //     // console.log(json)
+  //   } catch (error) {
+  //     setError(error)
+  //     // console.log(error)
+  //   }
+  // };
+  // fetchData()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
-        // console.log(response)
-        const json = await response.json();
-        // console.log(json)
-        setTours(json);
+        console.log(response)
+        const data = await response.json();
+        console.log(data)
+        setTours(data);
         // console.log(tours)
-        // console.log(json)
+        // console.log(data)
       } catch (error) {
         setError(error)
         // console.log(error)
       }
     };
     fetchData()
+    // console.log(tours)
   }, [])
 
-  console.log(tours)
+  // console.log(tours)
 
   return (
     <>
