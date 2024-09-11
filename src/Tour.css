@@ -1,0 +1,19 @@
+.price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgb(34, 148, 34);
+  font-weight: 600;
+  color: white;
+  padding: 8px;
+
+}
+
+.image-container {
+  position: relative;
+}
+
+.list-item {
+  width: 320px;
+  height: 360px;
+}
