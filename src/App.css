@@ -1,3 +1,11 @@
-h1 {
-  color: red;
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100;
+  overflow: auto
+}
+
+.container {
+  width: 70%;
 }
