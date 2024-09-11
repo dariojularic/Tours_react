@@ -25,26 +25,31 @@ function App() {
   // };
   // fetchData()
 
+  const array = [{id: 1, name: "city"}]
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
-        console.log(response)
+        // console.log(response)
         const data = await response.json();
-        console.log(data)
+        // console.log(data)
         setTours(data);
-        // console.log(tours)
+        console.log(tours)
         // console.log(data)
       } catch (error) {
         setError(error)
         // console.log(error)
       }
     };
+    // setTours(array)
     fetchData()
     // console.log(tours)
   }, [])
 
-  // console.log(tours)
+
+  if (!tours) return <h1>Loading...</h1>
+
+  console.log(tours)
 
   return (
     <>
@@ -54,6 +59,7 @@ function App() {
           {tours.map(tour => {
             // console.log(tour)
             return <Tour key={tour.id} {...tour}/>
+            // return <h1>{tour.name}</h1>
           })}
         </ul>
       </div>
