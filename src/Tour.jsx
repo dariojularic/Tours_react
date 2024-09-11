@@ -8,8 +8,10 @@ function Tour(props) {
         <img className="image" src={image} alt="" />
         <p className="price">{price}</p>
       </div>
-      <h3 className="tour-name">{name}</h3>
-      <p className="tour-info">{info}</p>
+      <div className="info-container">
+        <h3 className="tour-name">{name}</h3>
+        <p className="tour-info">{info}</p>
+      </div>
     </li>
   )
 
