@@ -6,13 +6,12 @@ function Tour(props) {
     <li className="list-item">
       <div className="image-container">
         <img className="image" src={image} alt="" />
-        <p className="price">{price}</p>
+        <p className="price">${price}</p>
       </div>
       <div className="info-container">
         <h3 className="tour-name">{name}</h3>
-        <p className="tour-info">{info} <button>Read more</button></p>
-        <button>Not interested</button>
-
+        <p className="tour-info">{info} <button> more</button></p>
+        <button className="not-interested-btn">Not interested</button>
       </div>
     </li>
   )

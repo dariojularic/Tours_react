@@ -2,11 +2,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgb(34, 148, 34);
+  background-color: #10b981;
   font-weight: 600;
   color: white;
-  padding: 8px;
-
+  padding: 16px;
+  margin: 0;
+  font-size: 24px;
 }
 
 .image-container {
@@ -35,8 +36,25 @@
 .info-container {
   padding: 32px;
   /* height: fit-content; */
+  display: flex;
+  flex-direction: column;
 }
 
 .tour-info {
   color:#64748b;
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+.not-interested-btn {
+  padding: 8px;
+  border: 1px solid #10b981;
+  color: #10b981;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 22px;
+}
+
+.tour-name {
+  font-size: 28px;
 }
