@@ -10,7 +10,9 @@ function Tour(props) {
       </div>
       <div className="info-container">
         <h3 className="tour-name">{name}</h3>
-        <p className="tour-info">{info}</p>
+        <p className="tour-info">{info} <button>Read more</button></p>
+        <button>Not interested</button>
+
       </div>
     </li>
   )
