@@ -30,6 +30,7 @@ function App() {
     <>
       <div className="container">
         <h1>Our Tours</h1>
+        <div className="title-underline"></div>
         {error && <p>Error: {error.message}</p>}
         <ul className="tours-list">
           {tours.map(tour => {
