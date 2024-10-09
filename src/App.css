@@ -32,9 +32,13 @@ body {
 }
 
 .title-underline {
-  background: green;
-  width: 80px;
+  background: #10b981;
+  width: 120px;
   height: 4px;
   margin: 0 auto;
-  
+
+}
+
+.header {
+  margin-bottom: 8px;
 }

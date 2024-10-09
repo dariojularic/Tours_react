@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <h1>Our Tours</h1>
+        <h1 className="header">Our Tours</h1>
         <div className="title-underline"></div>
         {error && <p>Error: {error.message}</p>}
         <ul className="tours-list">
