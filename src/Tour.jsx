@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./Tour.css"
 
 function Tour(props) {
+  const [isExpanded, setIsExpanded] = useState(false)
   const {id, name, info, image, price} = props;
   return (
     <li className="list-item">
