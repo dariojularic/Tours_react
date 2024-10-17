@@ -31,7 +31,7 @@ body {
   width: 100%;
 }
 
-/* .title-underline {
+.title-underline {
   background: #10b981;
   width: 120px;
   height: 4px;
@@ -41,4 +41,4 @@ body {
 
 .header {
   margin-bottom: 8px;
-} */
+}
