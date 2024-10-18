@@ -26,6 +26,8 @@ function App() {
     fetchData()
   }, [])
 
+  // if (tours == false) console.log("gagagaga")
+  // console.log(tours)
   if (!tours) return <h1>Loading...</h1>
 
   return (
