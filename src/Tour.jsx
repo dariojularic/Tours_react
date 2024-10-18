@@ -7,7 +7,7 @@ function Tour(props) {
   // samo filtriram, ne treba funkcija
 
   const {id, name, info, image, price, handleDeleteTour} = props;
-  console.log(props)
+  // console.log(props)
   return (
     <li className="list-item">
       <div className="image-container">
@@ -16,7 +16,12 @@ function Tour(props) {
       </div>
       <div className="info-container">
         <h3 className="tour-name">{name}</h3>
-        <p className="tour-info">{info} <button className="read-btn"> Read More</button></p>
+        <p className="tour-info">
+          {isExpanded ? info : `${info.substring(0, 100)}...`}
+          <button className="read-btn" onClick={() => setIsExpanded(!isExpanded)}>
+            {isExpanded ? "Show Less" : "Read More"}
+          </button>
+        </p>
         <button className="not-interested-btn" onClick={() => handleDeleteTour(id)}>Not interested</button>
       </div>
     </li>
