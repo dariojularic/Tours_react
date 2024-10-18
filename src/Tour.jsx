@@ -3,11 +3,7 @@ import "./Tour.css"
 
 function Tour(props) {
   const [isExpanded, setIsExpanded] = useState(false)
-  // const [interested, setInterested] = useState(true)
-  // samo filtriram, ne treba funkcija
-
   const {id, name, info, image, price, handleDeleteTour} = props;
-  // console.log(props)
   return (
     <li className="list-item">
       <div className="image-container">
@@ -17,7 +13,7 @@ function Tour(props) {
       <div className="info-container">
         <h3 className="tour-name">{name}</h3>
         <p className="tour-info">
-          {isExpanded ? info : `${info.substring(0, 100)}...`}
+          {isExpanded ? info : `${info.substring(0, 200)}...`}
           <button className="read-btn" onClick={() => setIsExpanded(!isExpanded)}>
             {isExpanded ? "Show Less" : "Read More"}
           </button>

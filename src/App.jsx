@@ -7,7 +7,7 @@ function App() {
   const [error, setError] = useState(null);
   const url = "https://www.course-api.com/react-tours-project";
 
-  // handle delete tour, set Tours
+  // ocu tu koristit prev???
   function handleDeleteTour(id) {
     const newTours = tours.filter(tour => tour.id !== id)
     setTours(newTours)
@@ -26,10 +26,7 @@ function App() {
     fetchData()
   }, [])
 
-
   if (!tours) return <h1>Loading...</h1>
-
-  // console.log(tours)
 
   return (
     <>
