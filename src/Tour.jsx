@@ -3,7 +3,11 @@ import "./Tour.css"
 
 function Tour(props) {
   const [isExpanded, setIsExpanded] = useState(false)
-  const {id, name, info, image, price} = props;
+  // const [interested, setInterested] = useState(true)
+  // samo filtriram, ne treba funkcija
+
+  const {id, name, info, image, price, handleDeleteTour} = props;
+  console.log(props)
   return (
     <li className="list-item">
       <div className="image-container">
@@ -13,11 +17,10 @@ function Tour(props) {
       <div className="info-container">
         <h3 className="tour-name">{name}</h3>
         <p className="tour-info">{info} <button className="read-btn"> Read More</button></p>
-        <button className="not-interested-btn">Not interested</button>
+        <button className="not-interested-btn" onClick={() => handleDeleteTour(id)}>Not interested</button>
       </div>
     </li>
-  )
-
+  );
 }
 
 export default Tour

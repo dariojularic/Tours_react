@@ -7,6 +7,11 @@ function App() {
   const [error, setError] = useState(null);
   const url = "https://www.course-api.com/react-tours-project";
 
+  // handle delete tour, set Tours
+  function handleDeleteTour(id) {
+    const newTours = tours.filter(tour => tour.id !== id)
+    setTours(newTours)
+  }
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,7 +39,7 @@ function App() {
         {error && <p>Error: {error.message}</p>}
         <ul className="tours-list">
           {tours.map(tour => {
-            return <Tour key={tour.id} {...tour}/>
+            return <Tour key={tour.id} handleDeleteTour={handleDeleteTour} {...tour}/>
           })}
         </ul>
       </div>
