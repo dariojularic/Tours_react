@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./Tour.css"
 
+
+// how to define react prop types reactjs
+// googlat error - 'image' is missing in props validationeslintreact/prop-types
+
+
 function Tour(props) {
   const [isExpanded, setIsExpanded] = useState(false)
   const {id, name, info, image, price, handleDeleteTour} = props;
