@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Tour.css"
+import PropTypes from "prop-types"
+
 
 
 // how to define react prop types reactjs
@@ -27,6 +29,15 @@ function Tour(props) {
       </div>
     </li>
   );
+}
+
+Tour.propTypes = {
+  id: PropTypes.number,
+  name: PropTypes.string,
+  info: PropTypes.string,
+  image: PropTypes.string,
+  price: PropTypes.number,
+  handleDeleteTour: PropTypes
 }
 
 export default Tour
