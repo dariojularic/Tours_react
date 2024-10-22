@@ -7,7 +7,6 @@ function App() {
   const [error, setError] = useState(null);
   const url = "https://www.course-api.com/react-tours-project";
 
-  // ocu tu koristit prev???
   function handleDeleteTour(id) {
     const newTours = tours.filter(tour => tour.id !== id)
     setTours(newTours)
